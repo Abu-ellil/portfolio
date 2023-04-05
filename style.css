@@ -135,7 +135,7 @@ span{
     background: var(--second-bg-color);
 }
 .about-img{
-    width: 40vw;
+    width: 35vw;
 }
 .heading{
     text-align: center;
@@ -299,6 +299,10 @@ span{
         font-size: 55%;
     }
 }
+
+
+
+
 @media (max-width:900px){
     .header{
         padding: 2rem 3%;
@@ -306,7 +310,22 @@ span{
     section{
         padding: 10rem 3% 2rem;
     }
+    .services{
+        padding-bottom: 7rem;
+    }
+    .portfolio{
+        padding-bottom: 7rem;
+    }
+    .contact
+        {
+            min-height: auto;
+        }
+    
 }
+
+
+
+
 
 @media (max-width:765px){
     #menu-icon{
@@ -331,5 +350,54 @@ span{
         font-size: 2rem;
         margin: 3rem 0;
     }
-
+    .home{
+        flex-direction: column;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .home-img{
+        width: 90vw;
+        margin-top: 4rem;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about img{
+        width: 90vw;
+        margin-top: 4rem;
+    }
+    .services h2{
+        margin-bottom: 3rem;
+    }
+    .portfolio h2{
+        margin-bottom: 3rem;
+    }
+    .portfolio-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
+
+@media (max-width:625px){
+.portfolio-container{
+    grid-template-columns:1fr;
+}
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .contact form .input-box input{
+        width: 100%;
+    }
+    .home-img{
+        width: 95vw;
+    }
+    .about-img{
+        width: 90vw;
+    }
+    }
