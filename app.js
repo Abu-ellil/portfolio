@@ -49,7 +49,7 @@ ScrollReveal({
 })
 
 ScrollReveal().reveal('.home-content, .heading',{origin:'top'})
-ScrollReveal().reveal('.home-img, .services-container, portfolio-box, .contact form',{origin:'bottom'})
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form',{origin:'bottom'})
 ScrollReveal().reveal('.about-img, .home-content h1',{origin:'left'})
 ScrollReveal().reveal('.home-content p, .about-content ',{origin:'right'})
 
