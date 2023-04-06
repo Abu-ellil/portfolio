@@ -197,6 +197,8 @@ span{
 }
 .portfolio-container{
     display: grid;
+    margin: auto;
+    width: 70%;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
@@ -254,6 +256,93 @@ span{
     font-size: 2rem;
     color: var(--second-bg-color);
 }
+
+/* Certifications SECTION */
+
+
+
+
+.slideshow {
+  text-align: center;
+}
+
+.slideshow-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slide {
+  width: 30%;
+  height: auto;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.slide.current {
+  width: 40%;
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 36px;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+.prev:hover,
+.next:hover {
+  transform: translateY(-50%) scale(1.2);
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .slideshow-container {
+    max-width: 100%;
+  }
+
+  .slide {
+    width: 40%;
+    margin: 0 5px;
+  }
+
+  .slide.current {
+    width: 50%;
+    transform: scale(1.2);
+    z-index: 1;
+  }
+
+  .prev,
+  .next {
+    font-size: 24px;
+  }
+}
+
+
+
+
 
 /* CONTACT SECTION */
 
@@ -323,7 +412,39 @@ span{
     
 }
 
+/* FOOTER STYLE */
 
+
+footer {
+  background-color: var(--bg-color);
+  padding: 20px;
+  text-align: center;
+  border-top: #00eeff .1px solid;
+}
+
+.footer-content {
+  display: inline-block;
+}
+
+p {
+  margin: 0;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .footer-content {
+    display: block;
+  }
+
+  .social-media {
+    margin-top: 10px;
+  }
+
+  .social-media a {
+    margin: 0 5px;
+  }
+}
 
 
 

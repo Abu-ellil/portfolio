@@ -54,13 +54,26 @@ ScrollReveal().reveal('.about-img, .home-content h1',{origin:'left'})
 ScrollReveal().reveal('.home-content p, .about-content ',{origin:'right'})
 
 
+// =================== certifications ===================
 
 
+let slideIndex = 2; // the index of the middle slide
+showSlides(slideIndex);
 
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
 
-
-
-
-
-
-
+function showSlides(n) {
+  let slides = document.getElementsByClassName("slide");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("current");
+  }
+  slides[slideIndex - 1].classList.add("current");
+}
