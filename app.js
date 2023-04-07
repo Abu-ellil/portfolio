@@ -130,6 +130,7 @@ const certifications = [
         certificationCardBack.appendChild(certificationDate);
 
         const certificationLink = document.createElement("a");
+        certificationLink.classList.add('btn')
         certificationLink.href = certification.link;
         certificationLink.target = "_blank";
         certificationLink.rel = "noreferrer";
