@@ -261,3 +261,23 @@ function renderServices() {
 
 let showMore = false;
 renderServices();
+
+// TOTOPBUTTON
+
+window.addEventListener("scroll", handleScroll);
+
+function handleScroll() {
+  const scrollButton = document.querySelector(".scroll-to-top");
+  if (window.pageYOffset > 200) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+}
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}

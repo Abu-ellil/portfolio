@@ -867,3 +867,33 @@ p {
     width: 90vw;
   }
 }
+
+
+/* TOTOPBUTTON */
+/* TOTOPBUTTON */
+
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  color: var(--main-color);
+  border: none;
+  border-radius: 50%;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.scroll-to-top i {
+  margin-top: 10px;
+}
+
+.scroll-to-top:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
