@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <title>Mahmoud AbuEllil</title>
 </head>
 <body>
@@ -16,7 +19,7 @@
         
 
         <nav class="navbar">
-            <a href="#hmoe" class="active">Home</a>
+            <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#portfolio">Portfolio</a>
@@ -28,7 +31,7 @@
         <div class="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Mahmoud AbuEllil</h1>
-            <h3>And I'm a <span>MERN Stack Developer</span></h3>
+            <h3>And I'm a <span id="element"></span></h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt vel eos reiciendis tenetur, et dicta quas mollitia quasi distinctio temporibus quidem, autem aliquam.</p>
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/abu-ellil-806619254/"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -37,7 +40,7 @@
 				<a href="https://www.instagram.com/mahmoud.aboellil/"><i class="fa-brands fa-instagram"></i></a>
                 <a href=""><i class="fa-brands fa-facebook-f"></i></a>
             </div>
-            <a href="#" class="btn">Dwonload CV</a>
+            <a href="https://drive.google.com/file/d/1XGi85MQYPCfLVCqFiJuKLWfSebXazN0s/view?usp=sharing" class="btn">Dwonload CV</a>
         </div>
         <div >
             <img class="home-img" src="img/me.png" alt="">
@@ -50,96 +53,256 @@
             <img class="about-img" src="img/me1.png" alt="">
         </div>
         <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h2>MERN Stack Developer!</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti architecto doloribus consectetur voluptas molestiae hic, natus esse maiores accusamus, ipsa libero facilis vero magni et provident quos similique delectus nobis voluptatum totam pariatur! Velit eos atque nisi eum saepe tempora quaerat iste quam! Dolorem, tempora explicabo.</p>
-            <a href="#" class="btn">Read More</a>
+
+
+<div class="about-me">
+  <h2>About Me</h2>
+  <p>
+    Hi there! I'm [Your Name], a passionate MERN Stack Developer with a strong focus on building robust and scalable web applications. With expertise in MongoDB, Express.js, React, and Node.js, I enjoy crafting dynamic and responsive user interfaces, implementing server-side logic, and designing efficient database structures. My goal is to create seamless and immersive web experiences that meet the needs of users and exceed their expectations.
+  </p>
+  <p>
+    With a keen eye for detail and a problem-solving mindset, I thrive in collaborative environments where I can contribute my skills to deliver high-quality solutions. I continuously stay updated with the latest web development trends and technologies to enhance my expertise and deliver cutting-edge applications.
+  </p>
+  <p>
+    When I'm not coding, you can find me exploring new technologies, experimenting with side projects, or enjoying outdoor activities. I'm passionate about learning and always seeking opportunities to expand my knowledge and skill set in the ever-evolving field of web development.
+  </p>
+  <p>
+    If you're looking for a dedicated MERN Stack Developer to bring your ideas to life, feel free to get in touch. I'm excited to collaborate on innovative projects and contribute to the success of your next web application.
+  </p>
+</div>
+<a href="#contact" class="btn">Hire Me!</a>
         </div>
     </section>
     <!-- Services section -->
-    <section class="services" id="services">
-        <h2 class="heading">Our <span>Services</span></h2>
-
-        <div class="services-container">
-            <div class="services-box">
-                <i class="fa-solid fa-code"></i>
-                <h3>Web Development</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, distinctio illum mollitia at, enim excepturi assumenda voluptatem dolorum temporibus illo est? </p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-
-            <div class="services-box">
-                <i class="fa-solid fa-paintbrush"></i>
-                <h3>Graphic Design</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, distinctio illum mollitia at, enim excepturi assumenda voluptatem dolorum temporibus illo est? </p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-
-            <div class="services-box">
-                <i class="fa-solid fa-chart-simple"></i>
-                <h3>Digital Marketing</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, distinctio illum mollitia at, enim excepturi assumenda voluptatem dolorum temporibus illo est? </p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-        </div>
-    </section>
+    <!-- Services section -->
+    <!-- Services section -->
+    <!-- Services section -->
+  <section class="services" id="services">
+    <h2 class="heading">Our <span>Services</span></h2>
+    <div class="services-container"></div>
+  </section>
+    <!-- Portfolio section -->
+    <!-- Portfolio section -->
+    <!-- Portfolio section -->
     <!-- Portfolio section -->
     <section class="portfolio" id="portfolio">
         <h2 class="heading">Latest <span>Project</span></h2>
         <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="https://picsum.photos/203" alt="">
-                <div class="potfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    <a href="#" class=""><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>    <div class="portfolio-box">
-                <img src="https://picsum.photos/207" alt="">
-                <div class="potfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    <a href="#" class=""><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
+        <div
+          class="portfolio-box"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <img
+            src="https://user-images.githubusercontent.com/94858304/250264715-31cbb966-2312-4e9d-b5ec-c5ab299070af.png"
+            alt=""
+          />
+          <div class="potfolio-layer">
+            <h4>Todo MERN</h4>
+            <p>
+              This is a MERN (MongoDB, Express, React, Node.js) project that
+              serves as a starting point for building a full-stack web
+              application.
+            </p>
+            <div class="layer-links">
+              <a
+                href="https://github.com/Abu-ellil"
+                class=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://mern-project-todo-kalbonyan.vercel.app/"
+                class=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-solid fa-link"></i>
+              </a>
             </div>
+          </div>
+        </div>
+        <div
+          class="portfolio-box"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <img
+            src="https://user-images.githubusercontent.com/94858304/238204725-0eb1fd2b-95d0-4dde-902c-ba65d8b92d61.PNG"
+            alt=""
+          />
+          <div class="potfolio-layer">
+            <h4>Your Car App</h4>
+            <p>
+              Shop is a React component that displays a carousel of cars with
+              interactive features such as adding cars to a shopping cart and
+              managing the cart contents.
+            </p>
 
-            <div class="portfolio-box">
-                <img src="https://picsum.photos/208" alt="">
-                <div class="potfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    <a href="#" class=""><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
+            <div class="layer-links">
+              <a
+                href="https://github.com/Abu-ellil/your-car-app"
+                class=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://abu-ellil.github.io/your-car-app/"
+                class=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-solid fa-link"></i>
+              </a>
             </div>
+          </div>
+        </div>
+        <div
+          class="portfolio-box"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <img
+            src="https://user-images.githubusercontent.com/94858304/231672110-488dfbec-cf4c-4ea5-85d3-041ecc33a61a.png"
+            alt=""
+          />
+          <div class="potfolio-layer">
+            <h4>20-Vanilla-JS-PROJECTS</h4>
+            <p>20 web PROJECTS designed and created by Vanilla JavaScript. </p>
 
-            <div class="portfolio-box">
-                <img src="https://picsum.photos/222" alt="">
-                <div class="potfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    <a href="#" class=""><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
+            <div class="layer-links">
+              <a
+                href="https://github.com/Abu-ellil/20-Vanilla-JS-PROJECTS"
+                class=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://abu-ellil.github.io/20-Vanilla-JS-PROJECTS/"
+                class=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-solid fa-link"></i>
+              </a>
             </div>
+          </div>
+        </div>
+        <div
+          class="portfolio-box"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <img
+            src="https://user-images.githubusercontent.com/94858304/231673207-c6eebb31-9f75-4acb-8b42-330c810a3681.png"
+            alt=""
+          />
+          <div class="potfolio-layer">
+            <h4>Kanban Board</h4>
+            <p>
+              This is a Kanban board project built using JavaScript, HTML, and
+              CSS. The Kanban board is a tool for visualizing tasks and
+              workflow.
+            </p>
 
-            <div class="portfolio-box">
-                <img src="https://picsum.photos/212" alt="">
-                <div class="potfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    <a href="#" class=""><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
+            <div class="layer-links">
+              <a
+                href="https://github.com/Abu-ellil/KanbanBoard"
+                class=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://abu-ellil.github.io/KanbanBoard/"
+                class=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-solid fa-link"></i>
+              </a>
             </div>
+          </div>
+        </div>
+        <div
+          class="portfolio-box"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <img
+            src="https://user-images.githubusercontent.com/94858304/231668224-187f8e82-f36a-493a-abc6-12cedb097f35.png"
+            alt=""
+          />
+          <div class="potfolio-layer">
+            <h4>Appie.</h4>
+            <p>
+              Appie. is my main project to test what I learned after finishing
+              HTML and CSS course.
+            </p>
 
-            <div class="portfolio-box">
-                <img src="https://picsum.photos/202" alt="">
-                <div class="potfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    <a href="#" class=""><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
+            <div class="layer-links">
+              <a
+                href="https://github.com/Abu-ellil/Appie"
+                class=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://abu-ellil.github.io/Appie"
+                class=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-solid fa-link"></i>
+              </a>
             </div>
+          </div>
+        </div>
+        <div
+          class="portfolio-box"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <img
+            src="https://private-user-images.githubusercontent.com/94858304/250699831-9eff9b6a-c0a8-4c3e-8a19-4413dff23c53.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg4NDMzMzM3LCJuYmYiOjE2ODg0MzMwMzcsInBhdGgiOiIvOTQ4NTgzMDQvMjUwNjk5ODMxLTllZmY5YjZhLWMwYTgtNGMzZS04YTE5LTQ0MTNkZmYyM2M1My5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMwNzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMDcwNFQwMTEwMzdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jYWE3ZDA1NDUwZjM4ZDgyZWM4ZWQwYTI3ZDhmNjI2OWY1MjYxYWZlMDZmNmQ3YTdkY2UzNjcyNjBjMjBlNGVhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.2S1l7-I3t3ksk7mOEvpeWFZGKdhfcXs9Qzq5gRwXYUA"
+            alt=""
+          />
+          <div class="potfolio-layer">
+            <h4>My Github</h4>
+            <p>
+              for more fun projects and ideas you can visit my github page.{" "}
+            </p>
+            <a href="https://github.com/Abu-ellil" class="">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
         </div>
     </section>
+
+
+    <!-- certifications section -->
+    <!-- certifications section -->
+    <!-- certifications section -->
     <!-- certifications section -->
 
 <section class="certifications">
@@ -149,6 +312,10 @@
 
 
 
+    <!-- contact section -->
+    <!-- contact section -->
+    <!-- contact section -->
+    <!-- contact section -->
     <!-- contact section -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
