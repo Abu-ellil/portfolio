@@ -105,8 +105,7 @@ section {
   display: none;
 }
 .home {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display:flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -747,7 +746,10 @@ h3 {
 @media (max-width: 900px) {
   .header {
     padding: 2rem 3%;
+    width: 90%;
   }
+ 
+  
   section {
     padding: 10rem 3% 2rem;
   }
