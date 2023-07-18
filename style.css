@@ -116,14 +116,12 @@ section {
   background-image: url(img/me.png);
   background-size: cover;
 }
-.img-div{
-    
+.img-div {
 }
 .home-content h3 {
   font-size: 3.2rem;
   font-weight: 700;
 }
-
 
 /* ANIMATION */
 /* ANIMATION */
@@ -140,7 +138,12 @@ section {
   border-radius: 50%;
   left: -12%;
   top: 80%;
-  background: linear-gradient(to right, #00eeff, var(--main-color), var(--main-color));
+  background: linear-gradient(
+    to right,
+    #00eeff,
+    var(--main-color),
+    var(--main-color)
+  );
   animation: obj1 6s linear infinite;
 }
 @keyframes obj1 {
@@ -170,7 +173,6 @@ section {
 /* ANIMATION */
 /* ANIMATION */
 /* ANIMATION */
-
 
 span {
   color: var(--main-color);

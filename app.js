@@ -8,22 +8,22 @@ toggleSwitch.addEventListener("click", () => {
   body.classList.toggle("dark");
 
   if (isOldImage) {
-    img.src = "img/meo.png"; // Change to the new image source
-    isOldImage = false; // Update the state to indicate the new image is displayed
+    img.src = "img/meo.png";
+    isOldImage = false;
   } else {
-    img.src = "img/me.png"; // Change back to the old image source
-    isOldImage = true; // Update the state to indicate the old image is displayed
+    img.src = "img/me.png";
+    isOldImage = true;
   }
 });
 
 // ===================== Scrolling effict ====================
-const menuIcon = document.querySelector('#menu-icon')
-const navbar = document.querySelector('.navbar')
+const menuIcon = document.querySelector("#menu-icon");
+const navbar = document.querySelector(".navbar");
 
-menuIcon.onclick = ()=>{
-  menuIcon.classList.toggle('fa-x')
-  navbar.classList.toggle('active')
-}
+menuIcon.onclick = () => {
+  menuIcon.classList.toggle("fa-x");
+  navbar.classList.toggle("active");
+};
 // ===================== Type effict ====================
 
 var typed = new Typed("#element", {
@@ -35,160 +35,157 @@ var typed = new Typed("#element", {
 });
 // ===================== Scrolling effict ====================
 
-const sections = document.querySelectorAll('section')
-const navLinks = document.querySelectorAll('header nav a')
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("header nav a");
 
-window.onscroll = ()=>{
-  sections.forEach((sec)=>{
-    let top = window.scrollY
-    let offset = sec.offsetTop - 150
-    let height = sec.offsetHeight
-    let id = sec.getAttribute('id')
+window.onscroll = () => {
+  sections.forEach((sec) => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop - 150;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute("id");
 
-    if(top >= offset && top < offset + height){
-      navLinks.forEach(link=>{
-        link.classList.remove('active')
-        document.querySelector(`header nav a[href='#${id}']`)?.classList.add('active')
-
-
-      })
+    if (top >= offset && top < offset + height) {
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        document
+          .querySelector(`header nav a[href='#${id}']`)
+          ?.classList.add("active");
+      });
     }
-
-  })
+  });
 
   // ===================== Sticky NavBar ====================
-  const header = document.querySelector('header')
-header.classList.toggle('sticky', window.scrollY>100)
+  const header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 100);
 
-
-
-menuIcon.classList.remove('fa-x')
-  navbar.classList.remove('active')
-}
+  menuIcon.classList.remove("fa-x");
+  navbar.classList.remove("active");
+};
 
 // ===================== Scroll reveal ====================
 
 ScrollReveal({
-  reset:true,
-  distance:'80px',
-  duration:2000,
-  delay:200
-})
+  reset: true,
+  distance: "80px",
+  duration: 2000,
+  delay: 200,
+});
 
-ScrollReveal().reveal('.home-content, .heading',{origin:'top'})
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form',{origin:'bottom'})
-ScrollReveal().reveal('.about-img, .home-content h1',{origin:'left'})
-ScrollReveal().reveal('.home-content p, .about-content ',{origin:'right'})
-
+ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
+ScrollReveal().reveal(
+  ".home-img, .services-container, .portfolio-box, .contact form",
+  { origin: "bottom" }
+);
+ScrollReveal().reveal(".about-img, .home-content h1", { origin: "left" });
+ScrollReveal().reveal(".home-content p, .about-content ", { origin: "right" });
 
 // =================== certifications ===================
 
+const certifications = [
+  {
+    name: "HTML&CSS",
+    image: `./assets/code.png`,
+    issuer: " Build Responsive Real-World Websites with HTML and CSS",
+    date: "December 2022",
+    link: "https://drive.google.com/file/d/1rUQQgkE6BG0yyrmEUQkPgqeZUTSCuDK4/view?usp=sharing",
+  },
+  {
+    name: "JavaScript-the complete guide",
+    image: `./assets/js.png`,
+    issuer: "JavaScript - The Complete Guide 2023 (Beginner + Advanced)",
+    date: "February 2023",
+    link: "https://drive.google.com/file/d/10n6FlNxcbwbqfYRuJfe6i5FRP8JzYc_8/view?usp=sharing",
+  },
 
-  const certifications = [
-    {
-      name: "HTML&CSS",
-      image: `./assets/code.png`,
-      issuer: " Build Responsive Real-World Websites with HTML and CSS",
-      date: "December 2022",
-      link: "https://drive.google.com/file/d/1rUQQgkE6BG0yyrmEUQkPgqeZUTSCuDK4/view?usp=sharing",
-    },
-    {
-      name: "JavaScript-the complete guide",
-      image: `./assets/js.png`,
-      issuer: "JavaScript - The Complete Guide 2023 (Beginner + Advanced)",
-      date: "February 2023",
-      link: "https://drive.google.com/file/d/10n6FlNxcbwbqfYRuJfe6i5FRP8JzYc_8/view?usp=sharing",
-    },
+  {
+    name: "React Certification",
+    image: `./assets/reactjs.png`,
+    issuer: "React - The Complete Guide (incl Hooks, React Router, Redux)",
+    date: "May 2023",
+    link: "https://drive.google.com/file/d/1-KoVotMEpnenKBM0sfy8fv6AeBqT8qI5/view?usp=sharing",
+  },
+  {
+    name: "NodeJS Certification",
+    image: `./assets/node.png`,
+    issuer: "NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)",
+    date: "July 2023",
+    link: "https://drive.google.com/file/d/18hOHTuJmQqhBXYdekO1LpjIK41EZ2cPN/view?usp=sharing",
+  },
+  {
+    name: "20 JavaScript Projects",
+    image: `./assets/UC-d39716ad-be3a-4d23-9b0b-e8c039dd882e.jpg`,
+    issuer: "20 web projects with vanilla javascript",
+    date: "March 2023",
+    link: "https://drive.google.com/file/d/1ErdMDznMUC0rVXVYvldJfe5CmdHeRxVF/view?usp=sharing",
+  },
 
-    {
-      name: "React Certification",
-      image: `./assets/reactjs.png`,
-      issuer: "React - The Complete Guide (incl Hooks, React Router, Redux)",
-      date: "May 2023",
-      link: "https://drive.google.com/file/d/1-KoVotMEpnenKBM0sfy8fv6AeBqT8qI5/view?usp=sharing",
-    },
-    {
-      name: "NodeJS Certification",
-      image: `./assets/node.png`,
-      issuer: "NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)",
-      date: "July 2023",
-      link: "https://drive.google.com/file/d/18hOHTuJmQqhBXYdekO1LpjIK41EZ2cPN/view?usp=sharing",
-    },
-    {
-      name: "20 JavaScript Projects",
-      image: `./assets/UC-d39716ad-be3a-4d23-9b0b-e8c039dd882e.jpg`,
-      issuer: "20 web projects with vanilla javascript",
-      date: "March 2023",
-      link: "https://drive.google.com/file/d/1ErdMDznMUC0rVXVYvldJfe5CmdHeRxVF/view?usp=sharing",
-    },
+  {
+    name: "MERN Stack",
+    image: `./assets/UC-7665bdcb-5d90-4b97-8c13-347e181bc047.jpg`,
+    issuer: "MERN Stack Course - MongoDB, Express, React and NodeJS",
+    date: "July, 2023",
+    link: "https://drive.google.com/file/d/1Jgq-LmHeD5DUxtB3GvW7hsNxuHn0AQ6J/view?usp=sharing",
+  },
+  {
+    name: "Beyond the Fundamentals",
+    image: `./assets/1670172004596.png`,
+    issuer: "Programming Foundations: Beyond the Fundamentals",
+    date: "December, 2022",
+    link: "https://drive.google.com/file/d/1B19ssRiWd9aIYg20eMv_pVnBToEAi8gS/view?usp=sharing",
+  },
+];
 
-    {
-      name: "MERN Stack",
-      image: `./assets/UC-7665bdcb-5d90-4b97-8c13-347e181bc047.jpg`,
-      issuer: "MERN Stack Course - MongoDB, Express, React and NodeJS",
-      date: "July, 2023",
-      link: "https://drive.google.com/file/d/1Jgq-LmHeD5DUxtB3GvW7hsNxuHn0AQ6J/view?usp=sharing",
-    },
-    {
-      name: "Beyond the Fundamentals",
-      image: `./assets/1670172004596.png`,
-      issuer: "Programming Foundations: Beyond the Fundamentals",
-      date: "December, 2022",
-      link: "https://drive.google.com/file/d/1B19ssRiWd9aIYg20eMv_pVnBToEAi8gS/view?usp=sharing",
-    },
-  ];
+certifications.map((certification) => {
+  const certificationCard = document.createElement("div");
+  certificationCard.classList.add("certification-card");
 
+  const certificationCardInner = document.createElement("div");
+  certificationCardInner.classList.add("certification-card-inner");
 
-      certifications.map((certification) => {
-        const certificationCard = document.createElement("div");
-        certificationCard.classList.add("certification-card");
+  const certificationCardFront = document.createElement("div");
+  certificationCardFront.classList.add("certification-card-front");
 
-        const certificationCardInner = document.createElement("div");
-        certificationCardInner.classList.add("certification-card-inner");
+  const certificationImage = document.createElement("img");
+  certificationImage.src = certification.image;
+  certificationImage.alt = certification.name;
+  certificationCardFront.appendChild(certificationImage);
 
-        const certificationCardFront = document.createElement("div");
-        certificationCardFront.classList.add("certification-card-front");
+  const certificationName = document.createElement("h3");
+  certificationName.innerText = certification.name;
+  certificationCardFront.appendChild(certificationName);
 
-        const certificationImage = document.createElement("img");
-        certificationImage.src = certification.image;
-        certificationImage.alt = certification.name;
-        certificationCardFront.appendChild(certificationImage);
+  const certificationCardBack = document.createElement("div");
+  certificationCardBack.classList.add("certification-card-back");
 
-        const certificationName = document.createElement("h3");
-        certificationName.innerText = certification.name;
-        certificationCardFront.appendChild(certificationName);
+  const issuerName = document.createElement("h3");
+  issuerName.innerText = certification.issuer;
+  certificationCardBack.appendChild(issuerName);
 
-        const certificationCardBack = document.createElement("div");
-        certificationCardBack.classList.add("certification-card-back");
+  const certificationDate = document.createElement("p");
+  certificationDate.innerText = "Date: " + certification.date;
+  certificationCardBack.appendChild(certificationDate);
 
-        const issuerName = document.createElement("h3");
-        issuerName.innerText = certification.issuer;
-        certificationCardBack.appendChild(issuerName);
+  const certificationLink = document.createElement("a");
+  certificationLink.classList.add("btn");
+  certificationLink.href = certification.link;
+  certificationLink.target = "_blank";
+  certificationLink.rel = "noreferrer";
+  certificationLink.innerText = "View Certificate";
+  certificationCardBack.appendChild(certificationLink);
 
-        const certificationDate = document.createElement("p");
-        certificationDate.innerText = "Date: " + certification.date;
-        certificationCardBack.appendChild(certificationDate);
+  certificationCardInner.appendChild(certificationCardFront);
+  certificationCardInner.appendChild(certificationCardBack);
+  certificationCard.appendChild(certificationCardInner);
+  document
+    .querySelector(".certifications-container")
+    .appendChild(certificationCard);
+});
 
-        const certificationLink = document.createElement("a");
-        certificationLink.classList.add('btn')
-        certificationLink.href = certification.link;
-        certificationLink.target = "_blank";
-        certificationLink.rel = "noreferrer";
-        certificationLink.innerText = "View Certificate";
-        certificationCardBack.appendChild(certificationLink);
-
-        certificationCardInner.appendChild(certificationCardFront);
-        certificationCardInner.appendChild(certificationCardBack);
-        certificationCard.appendChild(certificationCardInner);
-        document.querySelector(".certifications-container").appendChild(certificationCard);
-      });
-
-
-
-      // SERVICES
-      // SERVICES
-      // SERVICES
-      // SERVICES
+// SERVICES
+// SERVICES
+// SERVICES
+// SERVICES
 
 function toggleShowMore(e) {
   e.preventDefault();
@@ -264,7 +261,3 @@ function renderServices() {
 
 let showMore = false;
 renderServices();
-
-
-
-
