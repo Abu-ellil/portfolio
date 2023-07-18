@@ -1,3 +1,21 @@
+// ===================== DARK-LIGHT-MODE ====================
+const toggleSwitch = document.querySelector(".toggle-switch");
+const img = document.querySelector(".home-img");
+let isOldImage = true;
+
+toggleSwitch.addEventListener("click", () => {
+  const body = document.querySelector("body");
+  body.classList.toggle("dark");
+
+  if (isOldImage) {
+    img.src = "img/meo.png"; // Change to the new image source
+    isOldImage = false; // Update the state to indicate the new image is displayed
+  } else {
+    img.src = "img/me.png"; // Change back to the old image source
+    isOldImage = true; // Update the state to indicate the old image is displayed
+  }
+});
+
 // ===================== Scrolling effict ====================
 const menuIcon = document.querySelector('#menu-icon')
 const navbar = document.querySelector('.navbar')
@@ -246,3 +264,7 @@ function renderServices() {
 
 let showMore = false;
 renderServices();
+
+
+
+
