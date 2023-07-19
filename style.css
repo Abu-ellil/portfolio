@@ -806,10 +806,11 @@ h3 {
 /* FOOTER STYLE */
 
 footer {
+  width: 85%;
   background-color: var(--bg-color);
   padding: 20px;
   text-align: center;
-  border-top: #00eeff 0.1px solid;
+  border-top: var(--main-color) 0.1px solid;
 }
 
 .footer-content {
