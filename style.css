@@ -240,6 +240,8 @@ span {
 }
 .about-img {
   width: 35vw;
+  border-radius: 50%;
+  background-color: var(--main-color);
 }
 .heading {
   text-align: center;
