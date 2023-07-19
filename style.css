@@ -687,7 +687,7 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.755), #333);
+  background: linear-gradient(var(--main-color), #333);
   display: flex;
   justify-content: center;
   align-items: center;
