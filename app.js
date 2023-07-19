@@ -3,10 +3,9 @@ const toggleSwitch = document.querySelector(".toggle-switch");
 const img = document.querySelector(".home-img");
 let isOldImage = true;
 
-// Check if mode state is stored in localStorage
 const savedMode = localStorage.getItem("mode");
 if (savedMode) {
-  // Apply the saved mode
+  
   document.body.classList.toggle(savedMode);
   toggleSwitch.checked = savedMode === "dark";
 }
@@ -20,10 +19,10 @@ toggleSwitch.addEventListener("click", () => {
   localStorage.setItem("mode", currentMode);
 
   if (isOldImage) {
-    img.src = "img/meo.png";
+    img.src = `img/${currentMode}.png`;
     isOldImage = false;
   } else {
-    img.src = "img/me.png";
+    img.src = `img/${currentMode}.png`;
     isOldImage = true;
   }
 });
