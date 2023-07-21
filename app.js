@@ -273,6 +273,32 @@ function renderServices() {
 let showMore = false;
 renderServices();
 
+// CONTACTS
+
+  document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("fullName").value;
+    const email = document.getElementById("emailAddress").value;
+    const phone = document.getElementById("mobileNumber").value;
+    const subject = document.getElementById("emailSubject").value;
+    const message = document.getElementById("message").value;
+
+    const body = `
+      Name: ${name}
+      Email: ${email}
+      Phone: ${phone}
+      Subject: ${subject}
+
+      Message:
+      ${message}
+    `;
+
+    window.location.href = `mailto:mr.abuellil@gmail.com
+?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
+
+
 // TOTOPBUTTON
 
 window.addEventListener("scroll", handleScroll);

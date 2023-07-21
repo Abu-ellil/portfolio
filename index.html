@@ -322,23 +322,51 @@
     <!-- contact section -->
     <!-- contact section -->
     <!-- contact section -->
-    <!-- contact section -->
-    <!-- contact section -->
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-        <form action="#">
-           <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email Address">
-           </div>
-           <div class="input-box">
-            <input type="number" placeholder="Mobile Number">
-            <input type="text" placeholder="Email Subject">
-           </div>
-           <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-           <input type="button" value="Send Message" class="btn">
-        </form>
-    </section>
+  <h2 class="heading">
+    Contact <span>Me!</span>
+  </h2>
+  <form id="contactForm">
+    <div class="input-box">
+      <input
+        type="text"
+        placeholder="Full Name"
+        id="fullName"
+        required
+      />
+      <input
+        type="email"
+        placeholder="Email Address"
+        id="emailAddress"
+        required
+      />
+    </div>
+    <div class="input-box">
+      <input
+        type="tel"
+        placeholder="Mobile Number"
+        id="mobileNumber"
+      />
+      <input
+        type="text"
+        placeholder="Email Subject"
+        id="emailSubject"
+        required
+      />
+    </div>
+    <textarea
+      name="message"
+      cols="30"
+      rows="10"
+      placeholder="Your Message"
+      id="message"
+      required
+    ></textarea>
+    <input type="submit" value="Send Message" class="btn" />
+  </form>
+</section>
+    <!-- contact section -->
+    <!-- contact section -->
 
 <footer>
   <div class="footer-content">
